@@ -1,0 +1,93 @@
+ 
+body {
+    background-color: #CCC;
+  }
+   h2 {
+    text-align: center;
+   margin:10px 0 30px 0;
+    color: #343434;
+    font-size: 50px;
+    font-weight: normal;
+    transition: all 300ms;
+    will-change:transform
+  }
+  h2:hover{
+      transform:rotate(180deg)
+
+  }
+  .list {
+    position: relative;
+    width: 250px;
+    margin: 0px auto;
+    display: block;
+  }
+
+  
+  .input-todo {
+    outline: none;
+    border: 1px solid white;
+    background-color: #fff;
+    color: #343434;
+    height: 50px;
+    align-items:center;
+    text-align:center;
+    width: 258px;
+    padding-left: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: -5px;
+  }
+  .order{
+      align-items:center;
+      text-align:center
+  }
+   .add {
+    position: relative;
+    color:#343434;
+    margin: 10px 0 35px 90px;
+    align-items:center;
+    width:80px;
+    border:none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height:1.9;
+    cursor: pointer;
+}
+.add:hover{
+    background: #ccc;
+}
+ 
+ ul {
+  padding: 0px;
+}
+.draggable {
+  will-change: transform;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  height: 50px;
+  list-style-type: none;
+  margin: 10px;
+  background-color: white;
+  color: #212121;
+  width: 250px;
+  line-height: 3.2;
+  padding-left: 10px;
+  cursor: move;
+  transition: all 200ms;
+  user-select: none;
+  margin: 10px auto;
+  position: relative;
+}
+.draggable:after {
+  right: 7px;
+  font-size: 10px;
+  position: absolute;
+  cursor: pointer;
+  line-height: 5;
+  transition: all 200ms;
+  opacity: 0;
+}
+ 
+.over {
+  transform: scale(1.1, 1.1);
+}
