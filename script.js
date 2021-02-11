@@ -1,8 +1,7 @@
 var todo = document.querySelector('.add');
-var remove = document.querySelector('.draggable');
+var  remove = document.querySelector('.draggable');
  
 function dragStart(e) {
-  this.style.opacity = '0.4';
   dragSrcEl = this;
   e.dataTransfer.effectAllowed = 'move';
   e.dataTransfer.setData('text/html', this.innerHTML);
@@ -36,7 +35,7 @@ function dragEnd(e) {
   [].forEach.call(listItens, function(item) {
     item.classList.remove('over');
   });
-  this.style.opacity = '1';
+ 
 }
  
 function addEventsDragAndDrop(el) {
